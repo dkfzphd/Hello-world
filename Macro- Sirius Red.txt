@@ -1,15 +1,12 @@
 imageTitle=getTitle();//returns a string with the image title 
 selectWindow(imageTitle+"");
 run("Colour Deconvolution", "vectors=[FastRed FastBlue DAB]");
-selectWindow(imageTitle+"-(Colour_3)");
-selectWindow(imageTitle+"-(Colour_2)");
-selectWindow(imageTitle+"-(Colour_1)");
-selectWindow(imageTitle+"-(Colour_2)");
+
 selectWindow(imageTitle+"-(Colour_1)");
 setAutoThreshold("Default");
 //run("Threshold...");
 setThreshold(0, 230);
-setThreshold(0, 230);
+
 run("Measure");
 selectWindow(imageTitle+"-(Colour_3)");
 selectWindow(imageTitle+"-(Colour_1)");
